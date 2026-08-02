@@ -1,0 +1,146 @@
+.why-us{
+    padding:120px 8%;
+    background:#0d0d0d;
+    color:#fff;
+}
+
+.sub-title{
+    color:#D4AF37;
+    letter-spacing:7px;
+    text-transform:uppercase;
+    text-align:center;
+    margin-bottom:25px;
+    font-size:.95rem;
+}
+
+.title{
+    text-align:center;
+    font-size:4.5rem;
+    font-weight:800;
+    margin-bottom:25px;
+    line-height:1.1;
+}
+
+.title span{
+    color:#D4AF37;
+}
+
+.desc{
+    max-width:760px;
+    margin:0 auto 70px;
+    color:#9b9b9b;
+    text-align:center;
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+.choose-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:35px;
+}
+
+.choose-card{
+    background:#171717;
+    border:1px solid #2b2b2b;
+    border-radius:30px;
+    padding:40px;
+    transition:.35s;
+}
+
+.choose-card:hover{
+    transform:translateY(-12px);
+    border-color:#D4AF37;
+    box-shadow:0 18px 40px rgba(212,175,55,.15);
+}
+
+.icon-box{
+    width:85px;
+    height:85px;
+    border-radius:50%;
+    background:#D4AF37;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:35px;
+}
+
+.icon-box img{
+    width:42px;
+    height:42px;
+    object-fit:contain;
+}
+
+.choose-card h3{
+    font-size:2rem;
+    margin-bottom:18px;
+    font-weight:700;
+}
+
+.choose-card p{
+    color:#a8a8a8;
+    line-height:1.7;
+    font-size:1.15rem;
+}
+@media (max-width:992px){
+
+    .title{
+        font-size:3.5rem;
+    }
+
+    .choose-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media (max-width:768px){
+
+    .why-us{
+        padding:90px 6%;
+    }
+
+    .title{
+        font-size:2.8rem;
+    }
+
+    .desc{
+        font-size:1rem;
+    }
+
+    .choose-container{
+        grid-template-columns:1fr;
+    }
+
+    .choose-card{
+        padding:35px 30px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .title{
+        font-size:2.2rem;
+    }
+
+    .sub-title{
+        font-size:.8rem;
+        letter-spacing:4px;
+    }
+
+    .icon-box{
+        width:70px;
+        height:70px;
+    }
+
+    .icon-box img{
+        width:34px;
+        height:34px;
+    }
+
+    .choose-card h3{
+        font-size:1.6rem;
+    }
+
+}

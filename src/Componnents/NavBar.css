@@ -1,0 +1,122 @@
+.header{
+    width:95%;
+    height:90px;
+    position:fixed;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+    background:rgba(26,26,26,.88);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:28px;
+    z-index:999;
+    padding-top: 10px;
+}
+/* =================== Logo =================== */
+.logo{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-top: 10px;
+}
+
+.logo-icon{
+    width:54px;
+    height:54px;
+    border-radius:50%;
+    background:#E8C64D;
+    color:#111;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.7rem;
+    font-weight:700;
+}
+
+.logo h2{
+    color:#fff;
+    font-size:1.5rem;
+    font-weight:700;
+}
+
+.logo span{
+    color:#E8C64D;
+}
+
+/* =================== Links =================== */
+
+.nav-links{
+    display:flex;
+    gap:55px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#cfcfcf;
+    font-size:16px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#E8C64D;
+}
+
+/* =================== Button =================== */
+
+.book-btn{
+    border:none;
+    background:#E8C64D;
+    color:#111;
+    padding:18px 34px;
+    border-radius:40px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.book-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 20px rgba(232,198,77,.45);
+}
+
+/* =================== Responsive =================== */
+
+@media(max-width:992px){
+.header{
+padding:0 20px;
+}
+.nav-links{
+display:none;
+}
+.book-btn{
+display:none;
+}
+}
+.header::before{
+content:"";
+position:absolute;
+left:-150px;
+top:-120px;
+width:450px;
+height:300px;
+background:radial-gradient(circle,#e8c64d55 0%,transparent 70%);
+pointer-events:none;
+}
+
+.header::after{
+content:"";
+position:absolute;
+right:-150px;
+top:-120px;
+width:450px;
+height:300px;
+background:radial-gradient(circle,#e8c64d33 0%,transparent 70%);
+pointer-events:none;
+
+}
