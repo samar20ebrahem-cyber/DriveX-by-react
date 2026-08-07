@@ -1,3 +1,10 @@
+import bmwImage from "../assets/images/car1.jpg";
+import lamboImage from "../assets/images/car2.jpg";
+import porscheImage from "../assets/images/car3.jpg";
+import ferrariImage from "../assets/images/car4.jpg";
+import mercedesImage from "../assets/images/car5.jpg";
+import audiImage from "../assets/images/car6.jpg";
+
 const cars =[
     {
     id:'1',
@@ -5,7 +12,7 @@ const cars =[
    price: "$84,900",
    speed: "503 HP",
    horsePower: "290 km/h",
-   image: "l",
+   image: bmwImage,
    category: "Coupe"
     },
      {
@@ -14,7 +21,7 @@ const cars =[
    price: "$261,000",
    speed: " 631 HP",
    horsePower: "325 km/h",
-   image: "l",
+   image: lamboImage,
    category: "Supercar",
     },
      {
@@ -23,7 +30,7 @@ const cars =[
    price: "$230,400",
    speed: "640 HP ",
    horsePower: "330 km/h",
-   image: "l",
+   image: porscheImage,
    category: "Sports",
     },
      {
@@ -32,7 +39,7 @@ const cars =[
    price: "$507,000",
    speed: " 986 HP",
    horsePower: "340 km/h",
-   image: "l",
+   image: ferrariImage,
    category: "Hypercar",
     },
      {
@@ -41,7 +48,7 @@ const cars =[
    price: "$118,600",
    speed: "577 HP",
    horsePower: "318 km/h",
-   image: "l",
+   image: mercedesImage,
    category: "GT",
     },
      {
@@ -50,7 +57,7 @@ const cars =[
    price: "$158,600",
    speed: " 602 HP",
    horsePower: "331 km/h",
-   image: "l",
+   image: audiImage,
    category: "Supercar",
     },
 ]

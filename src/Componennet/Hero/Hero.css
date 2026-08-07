@@ -1,0 +1,261 @@
+.hero {
+    min-height: 100vh;
+    width: 100%;
+
+    position: relative;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #fff;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* Overlay */
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(0, 0, 0, 0.55) 45%,
+        rgba(0, 0, 0, 0.15) 100%
+    );
+
+    z-index: 0;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 45%;
+
+    background: linear-gradient(
+        to top,
+        rgba(10, 10, 8, 0.95),
+        transparent
+    );
+
+    z-index: 0;
+}
+
+
+/* =========================
+      HERO CONTENT
+========================= */
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    /* كل المحتوى يبدأ من 10px */
+    padding: 125px 10px 50px;
+}
+
+
+/* =========================
+      SMALL CARD
+========================= */
+
+.card-hero {
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 9px 22px;
+
+    margin: 0 0 34px 0;
+
+    border: 1px solid rgba(255, 255, 255, 0.13);
+
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.035);
+
+    backdrop-filter: blur(8px);
+}
+
+.card-hero .Dot {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #e6c64f;
+}
+
+.card-hero span {
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 15px;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+          TITLE
+========================= */
+
+.hero h1 {
+    margin: 0;
+
+    font-size: clamp(65px, 7vw, 105px);
+
+    line-height: 0.95;
+
+    font-weight: 800;
+
+    letter-spacing: -4px;
+
+    color: #fff;
+}
+
+.hero h1 span {
+    display: block;
+
+    margin-top: 15px;
+
+    color: #e6c64f;
+}
+
+
+/* =========================
+       DESCRIPTION
+========================= */
+
+.hero-desc {
+    width: 100%;
+    max-width: 780px;
+
+    margin: 42px 0 0;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    font-size: 22px;
+
+    line-height: 1.45;
+}
+
+
+/* =========================
+          BUTTONS
+========================= */
+
+.hero-btns {
+    display: flex;
+    align-items: center;
+
+    gap: 24px;
+
+    margin-top: 34px;
+}
+
+.hero-btns button {
+    height: 58px;
+
+    padding: 0 36px;
+
+    border-radius: 35px;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+/* Explore */
+
+.BtnEx {
+    border: none;
+
+    background: #e6c64f;
+
+    color: #111;
+}
+
+.BtnEx::after {
+    content: "→";
+
+    margin-left: 15px;
+
+    font-size: 21px;
+}
+
+
+/* Book */
+
+.BtnBo {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    background: rgba(20, 20, 20, 0.35);
+
+    color: #fff;
+
+    backdrop-filter: blur(8px);
+}
+
+
+/* =========================
+           STATS
+========================= */
+
+.char {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 40px;
+
+    margin-top: 68px;
+
+    padding-top: 38px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.cardat {
+    margin: 0;
+}
+
+.cardat h2 {
+    margin: 0 0 6px;
+
+    color: #fff;
+
+    font-size: 38px;
+
+    font-weight: 700;
+}
+
+.cardat span {
+    color: rgba(255, 255, 255, 0.58);
+
+    font-size: 15px;
+
+    letter-spacing: 2px;
+}
