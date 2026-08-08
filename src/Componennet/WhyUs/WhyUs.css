@@ -1,0 +1,177 @@
+.why-us {
+  background: #0d0d0d;
+  color: #fff;
+  padding: 20px 48px 70px;
+}
+
+/* ================= HEADING ================= */
+
+.why-us-heading {
+  text-align: center;
+  margin: 0 auto 70px;
+}
+
+.why-us-label {
+  color: #dcb83c;
+  font-size: 16px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0 0 25px;
+}
+
+.why-us-heading h2 {
+  font-size: 70px;
+  line-height: 1;
+  font-weight: 800;
+  margin: 0 0 25px;
+}
+
+.why-us-heading h2 span {
+  color: #e2bf47;
+}
+
+.why-us-description {
+  color: #bdbdbd;
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ================= CARDS ================= */
+
+.why-us-cards {
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}
+
+.why-us-card {
+  min-height: 350px;
+
+  padding: 48px;
+
+  background: linear-gradient(
+    145deg,
+    #1a1a1a,
+    #151515
+  );
+
+  border: 1px solid #2c2c2c;
+  border-radius: 40px;
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.why-us-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #dcb83c;
+
+  box-shadow:
+    0 20px 50px rgba(220, 184, 60, 0.12);
+}
+
+/* ================= ICON ================= */
+
+.why-us-icon {
+  width: 84px;
+  height: 84px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    135deg,
+    #dfbc3e,
+    #f9df6c
+  );
+
+  color: #111;
+
+  border-radius: 30px;
+
+  font-size: 34px;
+
+  margin-bottom: 42px;
+}
+
+/* ================= CARD TEXT ================= */
+
+.why-us-card h3 {
+  color: #fff;
+
+  font-size: 34px;
+  font-weight: 800;
+
+  line-height: 1.15;
+
+  margin: 0 0 22px;
+}
+
+.why-us-card p {
+  color: #bdbdbd;
+
+  font-size: 21px;
+
+  line-height: 1.5;
+
+  margin: 0;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+  .why-us {
+    padding: 70px 30px;
+  }
+
+  .why-us-heading h2 {
+    font-size: 55px;
+  }
+
+  .why-us-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .why-us {
+    padding: 60px 20px;
+  }
+
+  .why-us-label {
+    font-size: 13px;
+    letter-spacing: 3px;
+  }
+
+  .why-us-heading h2 {
+    font-size: 42px;
+  }
+
+  .why-us-description {
+    font-size: 18px;
+  }
+
+  .why-us-card {
+    padding: 35px;
+    min-height: auto;
+  }
+
+  .why-us-card h3 {
+    font-size: 28px;
+  }
+
+  .why-us-card p {
+    font-size: 18px;
+  }
+}

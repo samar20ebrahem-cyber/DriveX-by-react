@@ -3,9 +3,10 @@ import { Header } from "./Componennet/Header/Header.jsx"
 import { Hero } from "./Componennet/Hero/Hero.jsx"
 import { Home } from "./pages/Home/Home.jsx"
 import { Cars } from "./pages/Cars/Cars.jsx"
+import { WChoose } from "./Componennet/WhyUs/WhyUs.jsx"
 import { Booking } from "./pages/Booking/Booking.jsx"
 import { CarDetails } from "./pages/CarDetails/CarDetails.jsx"
- function App() {
+function App() {
   return (
     <>
       <BrowserRouter>
@@ -14,7 +15,8 @@ import { CarDetails } from "./pages/CarDetails/CarDetails.jsx"
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cars" element={<Cars />} />
-        <Route path="/Booking " element={<Booking  />} />
+          <Route path="/WhyUs" element={<WChoose  />} />
+          <Route path="/Booking " element={<Booking />} />
           <Route path="/CarDetails" element={<CarDetails />} />
         </Routes>
       </BrowserRouter>
