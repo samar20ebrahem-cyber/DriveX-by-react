@@ -19,6 +19,10 @@ export function NavBar() {
                     </li>
                     
                     <li>
+                        <NavLink to="/stats">Stats</NavLink>
+                    </li>
+
+                      <li>
                         <NavLink to="/contact">Contact</NavLink>
                     </li>
 

@@ -1,8 +1,8 @@
-import '../Componnents/Footer.css'
+import './Footer.css'
 import { FaInstagram, FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
 import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 
-function Footer() {
+export function Footer() {
     return (
         <footer className="footer">
 
@@ -95,4 +95,3 @@ function Footer() {
     )
 }
 
-export default Footer

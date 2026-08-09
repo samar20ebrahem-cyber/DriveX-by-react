@@ -1,16 +1,58 @@
-# React + Vite
+# DriveX
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A luxury car showroom website built with React as a training project.
 
-Currently, two official plugins are available:
+## About The Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+DriveX is a frontend practice project inspired by a premium car showroom website.
 
-## React Compiler
+The main goal of this project was to practice and apply React concepts while building a complete multi-section website.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## What I Practiced
 
-## Expanding the ESLint configuration
+- React Components
+- React Router
+- Routes and Navigation
+- `useState`
+- `useNavigate`
+- `NavLink`
+- Props
+- `map()`
+- Building reusable Car Cards from data
+- Separating Components and Pages
+- Importing and using an icon library with React
+- Organizing project files and components
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## React Router
+
+This project was mainly used as a practical training project for **React Router**.
+
+I practiced creating different routes and navigating between pages such as:
+
+- Contact
+- Cars
+- Testimonials
+- Stats
+
+## Icons
+
+I also practiced installing and using an external React icon library instead of relying only on regular HTML icons.
+
+## Styling
+
+The entire visual styling of this project was created with assistance from **ChatGPT**.
+
+The focus of this project was mainly on practicing React concepts, component structure, routing, reusable components, and working with data.
+
+## Technologies
+
+- React
+- JavaScript
+- React Router
+- CSS
+- React Icons
+- Vite
+
+## Status
+
+This project is a learning and practice project and may be improved and refactored as I continue learning React.

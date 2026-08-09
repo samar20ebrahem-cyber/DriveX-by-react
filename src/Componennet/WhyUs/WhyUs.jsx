@@ -11,15 +11,19 @@ export function WChoose() {
                 </div>
                 <div className="why-us-cards">
                     {
-                        WhyUs.map((item) => (
+                        WhyUs.map((item) => {
+                            const Icon = item.icon
+                             return (
                             <div className="why-us-card" key={item.id}>
                                 <div className="why-us-icon">
-                                    <i className={item.icon}></i>
+                                    <div className="icon">
+                                        <Icon />
+                                    </div>
                                 </div>
                                 <h3>{item.title}</h3>
                                 <p>{item.description}</p>
                             </div>
-                        ))
+                        )})
                     }
                 </div>
             </section>

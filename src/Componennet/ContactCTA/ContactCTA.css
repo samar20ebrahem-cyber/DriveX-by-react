@@ -1,0 +1,213 @@
+.contact-section {
+    padding: 80px 50px;
+}
+
+.contact {
+    position: relative;
+    max-width: 1650px;
+    min-height: 600px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 30px;
+
+    border: 1px solid #2b2b2b;
+    border-radius: 45px;
+
+    background:
+        radial-gradient(
+            circle at 50% 25%,
+            rgba(212, 170, 45, 0.13),
+            transparent 38%
+        ),
+        linear-gradient(
+            135deg,
+            #181818,
+            #111111 55%,
+            #171717
+        );
+
+    overflow: hidden;
+}
+
+
+/* اللمعة الخفيفة في الخلفية */
+.contact::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+
+    top: -250px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: rgba(218, 180, 61, 0.08);
+    filter: blur(100px);
+
+    pointer-events: none;
+}
+
+
+/* Ready When You Are */
+.contact > p:first-child {
+    position: relative;
+    z-index: 1;
+
+    margin: 0 0 35px;
+
+    color: #d8ae32;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+
+/* العنوان */
+.contact h2 {
+    position: relative;
+    z-index: 1;
+
+    max-width: 1000px;
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(55px, 6vw, 90px);
+    line-height: 0.95;
+    font-weight: 800;
+
+    letter-spacing: -4px;
+}
+
+
+/* dream car */
+.contact h2 span {
+    display: block;
+
+    color: #e1bb48;
+}
+
+
+/* الوصف */
+.contact > p:nth-of-type(2) {
+    position: relative;
+    z-index: 1;
+
+    max-width: 800px;
+
+    margin: 45px auto 50px;
+
+    color: #b9b9b9;
+
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+/* Button */
+.BtnCo {
+    position: relative;
+    z-index: 1;
+
+    min-width: 245px;
+    height: 65px;
+
+    padding: 0 35px;
+
+    border: none;
+    border-radius: 40px;
+
+    background: linear-gradient(
+        135deg,
+        #d9af36,
+        #f0d477
+    );
+
+    color: #111111;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.BtnCo::after {
+    content: "→";
+
+    margin-left: 15px;
+
+    font-size: 24px;
+
+    transition: transform 0.3s ease;
+}
+
+
+.BtnCo:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 15px 35px rgba(218, 177, 57, 0.25);
+}
+
+
+.BtnCo:hover::after {
+    display: inline-block;
+    transform: translateX(6px);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .contact-section {
+        padding: 50px 20px;
+    }
+
+    .contact {
+        min-height: 500px;
+
+        padding: 60px 20px;
+
+        border-radius: 30px;
+    }
+
+    .contact > p:first-child {
+        margin-bottom: 25px;
+
+        font-size: 13px;
+        letter-spacing: 4px;
+    }
+
+    .contact h2 {
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+
+    .contact > p:nth-of-type(2) {
+        margin: 35px auto 40px;
+
+        font-size: 17px;
+    }
+
+    .BtnCo {
+        min-width: 210px;
+        height: 60px;
+    }
+}
